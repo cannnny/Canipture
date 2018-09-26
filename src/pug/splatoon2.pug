@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
+        link(rel="stylesheet", href="css/stylesheet.css")
+        link(rel="stylesheet", href="css/lightbox.css")
+        title Splatoon2 | Canipture!
+    body
+        include includes/header
+        .wrapper
+            .top-contents
+                .title
+                    h1 Splatoon2
+                ul.button
+                    li: a(href="mhxx.html") ▻ MHXX
+                    li: a(href="others.html") ▻ Others
+                    li: a(href="screenshots.html") ▻ Back
+            .pictures
+                ul.scroll
+                    - for (var n = 6; n <= 487; n++)  
+                        li.fadein: a(href=`images/spl/spl${n}.jpg`, data-lightbox="spl")
+                            img(src=`images/spl/spl${n}.jpg`, alt=`spl${n}`)
+            .background
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js")
+        script(src="js/fadein.js")
+        script(src="js/lightbox.js")

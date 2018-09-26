@@ -1,0 +1,16 @@
+header
+    .header-logo: a(href="index.html") Canipture!
+    .header-menu
+        ul.menu
+            li: a.menu--item(href="index.html") Top
+            li: a.menu--item(href="about.html") About
+            li#js-hover
+                a.menu--item(href="screenshots.html") Screenshots
+                ul.menu--children#js-menu
+                    li: a(href="splatoon2.html") Splatoon2
+                    li: a(href="mhxx.html") MHXX
+                    li: a(href="others.html") Others
+            li: a.menu--item(href="contact.html") Contact
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+script(src="js/accordion.js")

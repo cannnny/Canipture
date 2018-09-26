@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
+        link(rel="stylesheet", href="css/stylesheet.css")
+        link(rel="stylesheet", href="css/lightbox.css")
+        title Others | Canipture!
+    body
+        include includes/header
+        
+        .wrapper
+            .top-contents
+                .title
+                    h1 Others
+                ul.button
+                    li: a(href="splatoon2.html") ▻ Splatoon2
+                    li: a(href="mhxx.html") ▻ MHXX
+                    li: a(href="screenshots.html") ▻ Back
+            .pictures
+                ul.scroll
+                    - for (var n = 2; n <= 11; n++)  
+                        li.fadein: a(href=`images/others/$zelda{n}.jpg`, data-lightbox="zelda")
+                            img(src=`images/others/zelda${n}.jpg`, alt=`zelda${n}`)
+                    - for (var n = 1; n <= 42; n++)  
+                        li.fadein: a(href=`images/others/mario${n}.jpg`, data-lightbox="mario")
+                            img(src=`images/others/mario${n}.jpg`, alt=`mario${n}`)
+                    - for (var n = 1; n <= 6; n++)  
+                        li.fadein: a(href=`images/others/fc${n}.jpg`, data-lightbox="fc")
+                            img(src=`images/others/fc${n}.jpg`, alt=`fc${n}`)
+            .background
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js")
+        script(src="js/fadein.js")
+        script(src="js/lightbox.js")
