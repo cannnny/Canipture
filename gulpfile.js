@@ -9,10 +9,10 @@ var browserSync = require("browser-sync");
 //setting : paths
 var paths = {
   'scss': './src/sass/',
-  'css': './dist/css/',
+  'css': './docs/css/',
   'pug': './src/pug/',
-  'html': './dist/',
-  'js': './dist/js/'
+  'html': './docs/',
+  'js': './docs/js/'
 }
 //setting : Sass Options
 var sassOptions = {
@@ -44,7 +44,8 @@ gulp.task('pug', () => {
 gulp.task('browser-sync', () => {
   browserSync({
     server: {
-      baseDir: paths.html
+      baseDir: "docs/",
+      index: "index.html"
     }
   });
   gulp.watch(paths.js + "**/*.js", ['reload']);

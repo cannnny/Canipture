@@ -1,0 +1,176 @@
+@import "reset";
+
+* {
+    box-sizing: border-box;
+}
+
+@media(max-width: 768px){
+    // トップページ
+    .top-wrapper {
+        height: 100vh;
+        background-image: url("../images/pages/spl3(mono)_sm.jpg")
+    }
+
+    .top-logo {
+        display: none;
+    }
+
+    .top-menu {
+        height: 100vh;
+        top: 50%;
+        left: 0;
+        right: 10px;
+        bottom: 50px;
+        font-size: 42px;
+        text-align: right;
+        a {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            text-shadow: 0.25px 0.25px 0 #000,
+                        -0.25px 0.25px 0 #000,
+                        0.25px -0.25px 0 #000,
+                        -0.25px -0.25px 0 #000;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .top-background {
+        display: none;
+    }
+
+    .top-header {
+        display: block;
+    }
+
+    // ヘッダー
+    header {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header-logo {
+        font-size: 18px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    // 背景
+    .background {
+        &:before {
+            width: 50%;
+            margin-right: -105px;
+            transform: skew(-10deg, 0);
+        }
+    }
+
+    // About
+    .about-text {
+        margin-top: 25px;
+        margin-left: 20px;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            line-height: 30px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+    }
+
+    // Screenshots
+    .screenshots-wrapper {
+        h1 {
+            font-size: 35px;
+    
+        }    
+    }
+
+    .contents {
+        display: block;
+        .splatoon2 {
+            width: 100%;
+            height: calc(100% / 3);
+            h3 {
+                width: 100%;
+                font-size: 20px;
+                left: 0;
+                text-align: right;
+                padding-right: 10%;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .mhxx {
+            width: 100%;
+            height: calc(100% / 3);
+            left: 0;
+            position: relative;
+            border-right: none;
+            transform: skew(0,0);
+            h3 {
+                font-size: 20px;
+                transform: skew(0,0);
+                top: 75%;
+                left: 12%;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .others {
+            width: 100%;
+            height: calc(100% / 3);
+            h3 {
+                font-size: 20px;
+                right: 20px;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    // Screenshots-contents
+    .wrapper {
+        .top-contents {
+            display: block;
+            .title {
+                padding-top: 20px;
+                margin-left: 20px;
+                h1 {
+                    font-size: 24px;
+                }
+            }
+            .button {
+                width: 100%;
+                justify-content: flex-end;
+                padding-right: 10px;
+                li {
+                    font-size: 18px;
+                    padding-top: 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    // Contact
+    .contact-text {
+        margin-top: 25px;
+        margin-left: 20px;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            line-height: 30px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+    }
+}
