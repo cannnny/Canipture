@@ -5,8 +5,8 @@ $('#js-hover').on('mouseleave', function(){
     $('#js-menu').slideUp();
 });
 $(document).on('click', '#mobile-menu-icon', function(){
-    $('#mobile-menu').addClass('active');
+    $('#mobile-menu').animate({width :'show'});
 });
-$(document).on('click', '#menu-close-icon', function(){
-    $('#mobile-menu').removeClass('active');
-});
+$(document).on('click', '#mobile-menu-close', function(){
+    $('#mobile-menu').animate({width :'hide'});
+})
