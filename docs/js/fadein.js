@@ -3,7 +3,3 @@ $('.fadein').on('inview', function(event, isInView){
 		$(this).addClass('fadein-anime');
 	}
 });
-
-window.onload = function() {
-    baguetteBox.run('.scroll');
-};
