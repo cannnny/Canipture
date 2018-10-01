@@ -6,6 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
         link(rel="stylesheet", href="css/stylesheet.css")
+        link(rel="stylesheet", href="css/responsive.css")
         link(rel="stylesheet", href="css/lightbox.css")
         title MHXX | Canipture!
     body
@@ -20,9 +21,9 @@ html(lang="en")
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 3; n <= 48; n++)  
-                        li.fadein: a(href=`images/mhxx/mhxx${n}.jpg`, data-lightbox="spl")
-                            img(src=`images/mhxx/mhxx${n}.jpg`, alt=`mhxx${n}`)
+                    - for (var n = 1; n <= 46; n++)  
+                        li.fadein: a(href=`images/mhxx/mhxx (${n}).jpg`, data-lightbox="mh")
+                            img(src=`images/mhxx/mhxx (${n}).jpg`, alt=`mhxx (${n})`)
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

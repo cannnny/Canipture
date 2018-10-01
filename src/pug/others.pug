@@ -6,6 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
         link(rel="stylesheet", href="css/stylesheet.css")
+        link(rel="stylesheet", href="css/responsive.css")
         link(rel="stylesheet", href="css/lightbox.css")
         title Others | Canipture!
     body
@@ -20,18 +21,18 @@ html(lang="en")
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 2; n <= 11; n++)  
-                        li.fadein: a(href=`images/others/zelda${n}.jpg`, data-lightbox="others")
-                            img(src=`images/others/zelda${n}.jpg`, alt=`zelda${n}`)
+                    - for (var n = 1; n <= 9; n++)  
+                        li.fadein: a(href=`images/others/zelda (${n}).jpg`, data-lightbox="others")
+                            img(src=`images/others/zelda (${n}).jpg`, alt=`zelda (${n})`)
                     - for (var n = 1; n <= 42; n++)  
-                        li.fadein: a(href=`images/others/mario${n}.jpg`, data-lightbox="others")
-                            img(src=`images/others/mario${n}.jpg`, alt=`mario${n}`)
+                        li.fadein: a(href=`images/others/mario (${n}).jpg`, data-lightbox="others")
+                            img(src=`images/others/mario (${n}).jpg`, alt=`mario (${n})`)
                     - for (var n = 1; n <= 6; n++)  
-                        li.fadein: a(href=`images/others/fc${n}.jpg`, data-lightbox="others")
-                            img(src=`images/others/fc${n}.jpg`, alt=`fc${n}`)
+                        li.fadein: a(href=`images/others/fc (${n}).jpg`, data-lightbox="others")
+                            img(src=`images/others/fc (${n}).jpg`, alt=`fc (${n})`)
                     - for (var n = 1; n <= 35; n++)  
-                        li.fadein: a(href=`images/others/poke${n}.jpg`, data-lightbox="others")
-                            img(src=`images/others/poke${n}.jpg`, alt=`poke${n}`)
+                        li.fadein: a(href=`images/others/poke (${n}).jpg`, data-lightbox="others")
+                            img(src=`images/others/poke (${n}).jpg`, alt=`poke (${n})`)
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

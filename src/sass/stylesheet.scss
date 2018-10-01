@@ -3,114 +3,124 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: sans-serif;
+}
 
 // トップページ
 .top-wrapper {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("images/pages/spl3(mono).jpg");
+    background-image: url("../images/pages/spl3(mono).jpg");
     background-size: cover;
     overflow: hidden;
-}
-
-
-.top-logo {
-    width: 80%;
-    top: 140px;
-    left: 60px;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 80px;
-    color: #fff;
-    text-shadow: 2px 2px 0 #000,
-                -2px 2px 0 #000,
-                2px -2px 0 #000,
-                -2px -2px 0 #000;
-    transform: rotate(-20deg);
-    position: absolute;
-    z-index: 1;
-}
-
-
-.top-menu {
-    top: 68%;
-    left: 78.5%;
-    font-size: 40px;
-    position: absolute;
-    z-index: 1;
-    ul {
-        list-style: none;
-        a {
-            text-decoration: none;
-            color: #fff;
-            line-height: 1.6;
-            &:hover {
-                color: #383c3c;
+    .top-header {
+        display: none;
+    }
+    .top-logo {
+        width: 80%;
+        top: 140px;
+        left: 60px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 80px;
+        color: #fff;
+        text-shadow: 2px 2px 0 #000,
+                    -2px 2px 0 #000,
+                    2px -2px 0 #000,
+                    -2px -2px 0 #000;
+        transform: rotate(-20deg);
+        position: absolute;
+        z-index: 1;
+    }
+    .top-menu {
+        top: 68%;
+        left: 78.5%;
+        font-size: 40px;
+        position: absolute;
+        z-index: 1;
+        ul {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: #fff;
+                line-height: 1.6;
+                &:hover {
+                    color: #383c3c;
+                }
             }
         }
     }
-}
-
-.top-background {
-    width: 30%;
-    height: 100%; 
-    position: absolute;
-    right: 0;
-    margin-right: -120px;
-    background-color: #fcc800;
-    transform: skew(-15deg, 0);
+    .top-background {
+        width: 30%;
+        height: 100%; 
+        position: absolute;
+        right: 0;
+        margin-right: -120px;
+        background-color: #fcc800;
+        transform: skew(-15deg, 0);
+    }
 }
 
 // ヘッダー
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 40px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
-}
-
-.header-logo {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    margin-left: 10px;
-    padding-top: 11px;
-    a {
-        text-decoration: none;
-        &:visited {
-            color: black;
+    z-index: 99;
+    .header-logo {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        margin-left: 10px;
+        padding-top: 11px;
+        a {
+            text-decoration: none;
+            &:visited {
+                color: black;
+            }
         }
     }
-}
-
-.header-menu {
-    .menu {
-        display: flex;
-        &--item {
-            display: inline-block;
-            padding: 11px 10px;
-            &:hover {
-                color: #ffb700;
-            }
-        }
-        &--children {
-            width: 120px;
-            display: none;
-            background-color: #fff;
-            position: absolute;
-            z-index: 100;
-            a {
-                width: 100%;
-                padding: 20px 0;
-                border: 1px solid #ccc;
+    .header-menu {
+        .menu {
+            display: flex;
+            &--item {
                 display: inline-block;
-                text-align: center;
+                padding: 11px 10px;
                 &:hover {
                     color: #ffb700;
-                }                
+                }
+            }
+            &--children {
+                width: 120px;
+                display: none;
+                background-color: #fff;
+                position: absolute;
+                z-index: 100;
+                a {
+                    width: 100%;
+                    padding: 20px 0;
+                    border: 1px solid #ccc;
+                    display: inline-block;
+                    text-align: center;
+                    &:hover {
+                        color: #ffb700;
+                    }                
+                }
             }
         }
+    }
+    .fa-bars {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
     }
 }
 
@@ -138,9 +148,8 @@ header {
 
 // About
 .about-text {
-    margin-top: 40px;
+    margin-top: 81px;
     margin-left: 35px;
-    position: absolute;
     h1 {
         font-size: 40px;
         margin-bottom: 15px;
@@ -157,8 +166,8 @@ header {
     h1 {
         font-size: 40px;
         color: #fff;
-        margin-left: 15px;
-        margin-top: 20px;
+        margin-left: 35px;
+        margin-top: 40px;
         position: absolute;
         z-index: 1;
     }
@@ -169,6 +178,7 @@ header {
     display: flex;
     width: 100%;
     height: calc(100vh - 41px);
+    margin-top: 41px;
     .splatoon2 {
         width: calc(100% / 2);
         height: 100%;
@@ -250,6 +260,7 @@ header {
     width: 100%;
     height: 100%;
     position: relative;
+    margin-top: 41px;
     .top-contents {
         display: flex;
         margin-bottom: 30px;
@@ -302,9 +313,8 @@ header {
 
 // Contact
 .contact-text {
-    margin-top: 40px;
+    margin-top: 81px;
     margin-left: 35px;
-    position: absolute;
     h1 {
         font-size: 40px;
         margin-bottom: 15px;

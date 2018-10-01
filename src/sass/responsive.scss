@@ -1,0 +1,212 @@
+@media(max-width: 768px){
+    // トップページ
+    .top-wrapper {
+        height: 100vh;
+        background-image: url("../images/pages/spl3(mono)_sm.jpg");
+        .top-logo {
+            display: none;
+        }
+        .top-menu {
+            height: 100vh;
+            top: 50%;
+            left: 0;
+            right: 10px;
+            bottom: 50px;
+            font-size: 42px;
+            text-align: right;
+            ul {
+                a {
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    text-shadow: 0.5px 0.5px 0 #000,
+                                -0.5px 0.5px 0 #000,
+                                0.5px -0.5px 0 #000,
+                                -0.5px -0.5px 0 #000;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .top-background {
+            display: none;
+        }
+        .top-header {
+            display: block;
+        }
+        .fa-bars {
+            display: none;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    }
+
+    // ヘッダー
+    header {
+        .header-logo {
+            font-size: 18px;
+        }
+        .header-menu {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+            font-size: 25px;
+            margin-right: 8px;
+            margin-top: 7px;
+            z-index: 100;
+        }
+        .mobile-menu {
+            width: 70%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.8);
+            color: #fff;
+            text-align: right;
+            display: none;
+            z-index: 100;
+            .fa-times {
+                font-size: 30px;
+                margin-right: 8px;
+                margin-top: 5px;
+            }
+            ul {
+                position: absolute;
+                top: 70px;
+                right: 10px;
+                li {
+                    margin-bottom: 15px;
+                    font-size: 30px;
+                }
+            }
+        }
+        .active {
+            display: block;
+        }
+    }
+
+    // 背景
+    .background {
+        &:before {
+            width: 50%;
+            margin-right: -105px;
+            transform: skew(-10deg, 0);
+        }
+    }
+
+    // About
+    .about-text {
+        margin-top: 70px;
+        margin-left: 20px;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            line-height: 30px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+    }
+
+    // Screenshots
+    .screenshots-wrapper {
+        h1 {
+            font-size: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }    
+    }
+
+    .contents {
+        display: block;
+        .splatoon2 {
+            width: 100%;
+            height: calc(100% / 3);
+            h3 {
+                width: 100%;
+                font-size: 20px;
+                left: 0;
+                text-align: right;
+                padding-right: 10%;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .mhxx {
+            width: 100%;
+            height: calc(100% / 3);
+            left: 0;
+            position: relative;
+            border-right: none;
+            transform: skew(0,0);
+            h3 {
+                font-size: 20px;
+                transform: skew(0,0);
+                top: 75%;
+                left: 12%;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+                transform: skew(0,0);
+            }
+        }
+        .others {
+            width: 100%;
+            height: calc(100% / 3);
+            h3 {
+                font-size: 20px;
+                right: 20px;
+            }
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    // Screenshots-contents
+    .wrapper {
+        .top-contents {
+            display: block;
+            .title {
+                padding-top: 20px;
+                margin-left: 20px;
+                h1 {
+                    font-size: 24px;
+                }
+            }
+            .button {
+                width: 100%;
+                justify-content: flex-end;
+                padding-right: 10px;
+                li {
+                    font-size: 18px;
+                    padding-top: 20px;
+                    margin-left: 20px;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact
+    .contact-text {
+        margin-top: 70px;
+        margin-left: 20px;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            line-height: 30px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+    }
+}

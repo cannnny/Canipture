@@ -6,6 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
         link(rel="stylesheet", href="css/stylesheet.css")
+        link(rel="stylesheet", href="css/responsive.css")
         link(rel="stylesheet", href="css/lightbox.css")
         title Splatoon2 | Canipture!
     body
@@ -20,9 +21,9 @@ html(lang="en")
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 6; n <= 487; n++)  
-                        li.fadein: a(href=`images/spl/spl${n}.jpg`, data-lightbox="spl")
-                            img(src=`images/spl/spl${n}.jpg`, alt=`spl${n}`)
+                    - for (var n = 1; n <= 100; n++)  
+                        li.fadein: a(href=`images/spl/spl (${n}).jpg`, data-lightbox="spl")
+                            img(src=`images/spl/spl (${n}).jpg`, alt=`spl (${n})`)
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
