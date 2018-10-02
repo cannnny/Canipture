@@ -9,4 +9,4 @@ $('header').on('click', '#mobile-menu-icon', function(){
 });
 $('header').on('click', '#mobile-menu-close', function(){
     $('#mobile-menu').animate({width :'toggle'});
-})
+});
