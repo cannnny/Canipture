@@ -17,13 +17,13 @@ html(lang="en")
                     h1 Others
                 ul.button
                     li: a(href="splatoon2.html") ▻ Splatoon2
-                    li: a(href="mhxx.html") ▻ MHXX
+                    li: a(href="zelda.html") ▻ ZELDA
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 1; n <= 9; n++)  
-                        li.fadein: a(href=`images/others/zelda (${n}).jpg`, data-lightbox="others")
-                            img(src=`images/others/zelda (${n}).jpg`, alt=`zelda (${n})`)
+                    - for (var n = 1; n <= 19; n++)  
+                        li.fadein: a(href=`images/others/mhxx (${n}).jpg`, data-lightbox="others")
+                            img(src=`images/others/mhxx (${n}).jpg`, alt=`mhxx (${n})`)
                     - for (var n = 1; n <= 36; n++)  
                         li.fadein: a(href=`images/others/mario (${n}).jpg`, data-lightbox="others")
                             img(src=`images/others/mario (${n}).jpg`, alt=`mario (${n})`)

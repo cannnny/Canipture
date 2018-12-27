@@ -8,22 +8,22 @@ html(lang="en")
         link(rel="stylesheet", href="css/stylesheet.css")
         link(rel="stylesheet", href="css/responsive.css")
         link(rel="stylesheet", href="css/lightbox.css")
-        title MHXX | Canipture!
+        title ZELDA | Canipture!
     body
         include includes/header
         .wrapper
             .top-contents
                 .title
-                    h1 Monster Hunter XX
+                    h1 The Legend of Zelda
                 ul.button
                     li: a(href="splatoon2.html") ▻ Splatoon2
                     li: a(href="others.html") ▻ Others
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 1; n <= 19; n++)  
-                        li.fadein: a(href=`images/mhxx/mhxx (${n}).jpg`, data-lightbox="mh")
-                            img(src=`images/mhxx/mhxx (${n}).jpg`, alt=`mhxx (${n})`)
+                    - for (var n = 1; n <= 9; n++)  
+                        li.fadein: a(href=`images/zelda/zelda (${n}).jpg`, data-lightbox="zelda")
+                            img(src=`images/zelda/zelda (${n}).jpg`, alt=`zelda (${n})`)
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
