@@ -21,9 +21,9 @@ html(lang="en")
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 1; n <= 100; n++)  
-                        li.fadein: a(href=`images/spl/spl (${n}).jpg`, data-lightbox="spl")
-                            img(src=`images/spl/spl (${n}).jpg`, alt=`spl (${n})`)
+                    - for (var n = 1; n <= 131; n++)  
+                        li.fadein: a(href=`images/spl/spl${n}.jpg`, data-lightbox="spl")
+                            img(src=`images/spl/spl${n}.jpg`, alt=`spl${n}`, oncontextmenu="return false;")
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

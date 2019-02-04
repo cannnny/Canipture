@@ -23,13 +23,13 @@ html(lang="en")
                 ul.scroll
                     - for (var n = 1; n <= 19; n++)  
                         li.fadein: a(href=`images/others/mhxx (${n}).jpg`, data-lightbox="others")
-                            img(src=`images/others/mhxx (${n}).jpg`, alt=`mhxx (${n})`)
+                            img(src=`images/others/mhxx (${n}).jpg`, alt=`mhxx (${n})`, oncontextmenu="return false;")
                     - for (var n = 1; n <= 36; n++)  
                         li.fadein: a(href=`images/others/mario (${n}).jpg`, data-lightbox="others")
-                            img(src=`images/others/mario (${n}).jpg`, alt=`mario (${n})`)
+                            img(src=`images/others/mario (${n}).jpg`, alt=`mario (${n})`, oncontextmenu="return false;")
                     - for (var n = 1; n <= 21; n++)  
                         li.fadein: a(href=`images/others/poke (${n}).jpg`, data-lightbox="others")
-                            img(src=`images/others/poke (${n}).jpg`, alt=`poke (${n})`)
+                            img(src=`images/others/poke (${n}).jpg`, alt=`poke (${n})`, oncontextmenu="return false;")
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

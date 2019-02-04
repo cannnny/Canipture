@@ -21,9 +21,9 @@ html(lang="en")
                     li: a(href="screenshots.html") ▻ Back
             .pictures
                 ul.scroll
-                    - for (var n = 1; n <= 103; n++)  
-                        li.fadein: a(href=`images/zelda/zelda (${n}).jpg`, data-lightbox="zelda")
-                            img(src=`images/zelda/zelda (${n}).jpg`, alt=`zelda (${n})`)
+                    - for (var n = 1; n <= 115; n++)  
+                        li.fadein: a(href=`images/zelda/zelda${n}.jpg`, data-lightbox="zelda")
+                            img(src=`images/zelda/zelda${n}.jpg`, alt=`zelda${n}`, oncontextmenu="return false;")
             .background
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
